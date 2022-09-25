@@ -2,7 +2,7 @@
     <img src= "images/slider-img.png" alt="drawing" width="100"/> 
 </p>
 
-<p style="text-align: center;"> ITMO Web programming labs</p>
+<p align="center"> ITMO Web programming labs</p>
 
 ## Description
 A landing page for the mobile application
