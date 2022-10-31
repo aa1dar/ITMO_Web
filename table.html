@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BestApp</title>
+    <link href="styles/style.css" type="text/css" rel="stylesheet"/>
+    <link href="styles/table_style.css" type="text/css" rel="stylesheet"/>
+    <meta name="description" content="The Best Company In The World"/>
+</head>
+<body>
+<div class="hero_area">
+
+    <!-- header section starts -->
+    <header class="header_section">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg custom_nav-container">
+                <a class="navbar-brand" href="index.html">
+            <span>
+              BestApp
+            </span>
+                </a>
+
+                <div class="navbar-collapse" id="">
+                    <div class="custom_menu-btn">
+                        <button onclick="openNavigationBar()">
+                            <span class="s-1"> </span>
+                            <span class="s-2"> </span>
+                            <span class="s-3"> </span>
+                        </button>
+                    </div>
+                    <div id="myNav" class="overlay">
+                        <div class="overlay-content">
+                            <a href="index.html">HOME</a>
+                            <a href="table.html" onclick="openNavigationBar()">TABLE</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="slider_section">
+    <div class="container">
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Email</th>
+                <th>Address</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>Person1</td>
+                <td>Person1LastName</td>
+                <td>person1@w3.org</td>
+                <td>7850 Old Shore Drive</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Person2</td>
+                <td>Person2LastName</td>
+                <td>person2@w3.org</td>
+                <td>7850 Old Shore Drive</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Person3</td>
+                <td>Person3LastName</td>
+                <td>person3@w3.org</td>
+                <td>7850 Old Shore Drive</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Person4</td>
+                <td>Person4LastName</td>
+                <td>person4@w3.org</td>
+                <td>7850 Old Shore Drive</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Person5</td>
+                <td>Person5LastName</td>
+                <td>person5@w3.org</td>
+                <td>7850 Old Shore Drive</td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+    </section>
+</div>
+<section class="footer_section">
+    <div class="row">
+        <p>
+            &copy; 2022
+        </p>
+        <span id="pageLoadTime">    </span>
+    </div>
+</section>
+<script src="scripts/menuUpdate.js"></script>
+<script src="scripts/menuUpdate.js"></script>
+<script>
+    function openNavigationBar() {
+        document.getElementById("myNav").classList.toggle("menu_width");
+        document
+            .querySelector(".custom_menu-btn")
+            .classList.toggle("menu_btn-style");
+        getCurrentLocation()
+    }
+</script>
+<script src="scripts/onLoadScrips.js"></script>
+</body>
+</html>

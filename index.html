@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BestApp</title>
     <link href="styles/style.css" type="text/css" rel="stylesheet"/>
+    <link href="styles/responsive.css" type="text/css" rel="stylesheet"/>
     <meta name="description" content="The Best Company In The World"/>
 </head>
 <body>
@@ -31,9 +32,16 @@
                     </div>
                     <div id="myNav" class="overlay">
                         <div class="overlay-content">
-                            <a href="index.html">HOME</a>
-                            <a href="#feature" onclick="openNavigationBar()">FEATURE</a>
-                            <a href="#contacts" onclick="openNavigationBar()">CONTACT US</a>
+                            <ul>
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="#feature" onclick="openNavigationBar()">FEATURE</a></li>
+                                <li><a href="#contacts" onclick="openNavigationBar()">CONTACT US</a></li>
+                                <li><a href="table.html" onclick="openNavigationBar()">TABLE</a></li>
+                            </ul>
+
+
+
+
                         </div>
                     </div>
                 </div>
@@ -351,19 +359,27 @@
 <!-- end info section -->
 <!-- footer section -->
 <section class="footer_section">
+    <div class="row">
     <p>
         &copy; 2022
     </p>
+    <span id="pageLoadTime">    </span>
+    </div>
 </section>
 
+<script src="scripts/menuUpdate.js"></script>
 <script>
     function openNavigationBar() {
         document.getElementById("myNav").classList.toggle("menu_width");
         document
             .querySelector(".custom_menu-btn")
             .classList.toggle("menu_btn-style");
+        getCurrentLocation()
+
     }
 </script>
+<script src="scripts/onLoadScrips.js"></script>
+
 <!-- footer section -->
 </body>
 </html>
