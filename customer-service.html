@@ -7,11 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BestApp</title>
     <link href="styles/style.css" type="text/css" rel="stylesheet"/>
-    <link href="styles/table_style.css" type="text/css" rel="stylesheet"/>
+    <link href="styles/service_style.css" type="text/css" rel="stylesheet"/>
     <meta name="description" content="The Best Company In The World"/>
+
 </head>
 <body>
-<div class="hero_area">
+<div class="service_hero">
 
     <!-- header section starts -->
     <header class="header_section">
@@ -34,67 +35,44 @@
                     <div id="myNav" class="overlay">
                         <div class="overlay-content">
                             <a href="index.html">HOME</a>
-                            <a href="table.html" onclick="openNavigationBar()">TABLE</a>
-                            <a href="customer-service.html">CUSTOMER SERVICE</a>
+                            <a href="table.html">TABLE</a>
+                            <a href="customer-service.html" onclick="openNavigationBar()">CUSTOMER SERVICE</a>
                         </div>
                     </div>
                 </div>
             </nav>
         </div>
     </header>
-    <section class="slider_section">
-    <div class="container">
-        <table>
-            <thead>
-            <tr>
-                <th>ID</th>
-                <th>First name</th>
-                <th>Last name</th>
-                <th>Email</th>
-                <th>Address</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>1</td>
-                <td>Person1</td>
-                <td>Person1LastName</td>
-                <td>person1@w3.org</td>
-                <td>7850 Old Shore Drive</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Person2</td>
-                <td>Person2LastName</td>
-                <td>person2@w3.org</td>
-                <td>7850 Old Shore Drive</td>
-            </tr>
+    <section class="slider_section service_section">
 
-            <tr>
-                <td>3</td>
-                <td>Person3</td>
-                <td>Person3LastName</td>
-                <td>person3@w3.org</td>
-                <td>7850 Old Shore Drive</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Person4</td>
-                <td>Person4LastName</td>
-                <td>person4@w3.org</td>
-                <td>7850 Old Shore Drive</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>Person5</td>
-                <td>Person5LastName</td>
-                <td>person5@w3.org</td>
-                <td>7850 Old Shore Drive</td>
-            </tr>
+            <div class="col-md-6">
+                <form class="service_form">
+                    <div class="contact_form-container">
+                        <div class="mt-5">
+                            <input class="service_input" type="text" placeholder="Message">
+                            <button class="service_button" type="submit">
+                                send
+                            </button>
+                            <button onclick="clearMessages();" type="button">
+                                clear
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div class="message-box">
+                </div>
+            </div>
+            <div class="col-md-6 review_section">
+                <div class="loader">
 
-            </tbody>
-        </table>
-    </div>
+                </div>
+                <div class="error">⚠ Что-то пошло не так</div>
+                <section class="reviews">
+                    <ul class="reviews-list"></ul>
+                </section>
+            </div>
+
+
     </section>
 </div>
 <section class="footer_section">
@@ -106,7 +84,6 @@
     </div>
 </section>
 <script src="scripts/menuUpdate.js"></script>
-<script src="scripts/menuUpdate.js"></script>
 <script>
     function openNavigationBar() {
         document.getElementById("myNav").classList.toggle("menu_width");
@@ -117,5 +94,7 @@
     }
 </script>
 <script src="scripts/onLoadScrips.js"></script>
+<script src="scripts/formController.js"></script>
+<script src="scripts/getReviews.js"></script>
 </body>
 </html>

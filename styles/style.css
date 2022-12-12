@@ -121,6 +121,41 @@ body {
     margin-top: 100px;
 }
 
+.header {
+    position: fixed;
+
+}
+
+.headroom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all .4s ease-in-out;
+}
+
+/*Handling the unpinned header state*/
+.headroom--unpinned  {
+    top: -100px;
+    position: fixed;
+    z-index: 4;
+}
+
+/*Handling the pinned header state*/
+.headroom--pinned{
+    background:#f2f7fd;
+    top: 0;
+    position: fixed;
+    z-index: 4;
+}
+/*Handling the initial header state*/
+.headroom--top{
+    background-image: linear-gradient(to right, #f2f7fd 50%, #1d1e31 45%);
+    top: 0;
+    position: fixed;
+    z-index: 4;
+}
+
 /*header section*/
 .hero_area {
     height: 100vh;
@@ -172,7 +207,7 @@ body {
     display: block;
     width: 35px;
     height: 5px;
-    background-color: #fff;
+    background-color: #8547CA;
     margin: 7px 0;
     -webkit-transition: all .3s;
     transition: all .3s;
@@ -207,7 +242,7 @@ body {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 5 !important;
     top: 0;
     left: 0;
     background-color: black;
@@ -323,7 +358,7 @@ a:focus {
     -ms-flex-align: center;
     align-items: center;
     height: calc(100% - 75px);
-    padding: 50px 0;
+    padding: 120px 0 50px
 }
 
 .slider_section .container {
@@ -639,7 +674,7 @@ a:focus {
     justify-content: center;
 }
 
-.footer_section p,span {
+.footer_section p, span {
     margin: 0 10px;
     text-align: center;
     color: #fefdfc;
@@ -648,3 +683,5 @@ a:focus {
 .footer_section a {
     color: #fefdfc;
 }
+
+
