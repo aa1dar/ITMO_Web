@@ -1,0 +1,14 @@
+/**
+ * Slider CSS
+ */
+.jc-slider {
+    overflow: hidden;
+    width: 100%;
+}
+.jc-slider * {
+    box-sizing:border-box;
+}
+
+.jc-slider li{
+    list-style: none;
+}
