@@ -1,0 +1,78 @@
+@media screen and (max-width: 1120px) {
+
+
+    .slider_section .img-box img {
+        height: auto;
+        width: 100%;
+    }
+
+    .slider_section .detail-box h1 {
+        font-size: 4.5rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .slider_section .detail-box h1 {
+        font-size: 3.5rem;
+    }
+
+    .slider_section .detail-box h2 {
+        font-size: 2rem;
+    }
+
+    .col-md-3 .subscribe_container {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero_area {
+        background: linear-gradient(to bottom, #f2f7fd 50%, #1d1e31 45%);
+    }
+
+    .sub_page .hero_area {
+        background: linear-gradient(to bottom, #f2f7fd 50%, #f2f7fd 45%);
+    }
+
+    .hero_area {
+        height: auto;
+    }
+
+    .custom_menu-btn span {
+        background-color: #1d1e31;
+    }
+
+    .menu_btn-style button span {
+        background-color: #fff;
+    }
+
+    .contact_img-box {
+        margin-top: 45px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .contact_section input {
+        width: 100%;
+    }
+
+    .info_section .social-box {
+        width: auto;
+    }
+
+
+}
+
+
+@media screen and (max-width: 400px) {
+    .slider_section .detail-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .slider_section .detail-box h1 {
+        font-size: 2.5rem;
+    }
+
+
+}
